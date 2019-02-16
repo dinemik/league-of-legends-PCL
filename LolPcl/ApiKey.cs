@@ -8,6 +8,6 @@ namespace LolPcl
 {
     internal static class ApiKey
     {
-        public static string ApiKeyTmp => "?api_key=RGAPI-ad86e316-b0e3-4b4f-9568-8a9b497973a8";
+        public static string ApiKeyTmp => "?api_key=Enter here api key";
     }
 }
