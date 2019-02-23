@@ -14,7 +14,7 @@ namespace LolPcl.Class
     {
         public static async Task<RootPlayerInfo> GetPlayerInfoAsync(string nick, string region)
         {
-            var url = (region + Links.PlayerLink + nick + ApiKey.ApiKeyTmp);
+            var url = (region + Links.PlayerLink + nick + Player.ApiKey);
             var jsonStr = await new Web().UrlAsync(url);
             return DesJson.GetObjPlayerInf(jsonStr);
         }

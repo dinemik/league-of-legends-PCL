@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiKey.cs" />
     <Compile Include="Class\enums\Regions.cs" />
     <Compile Include="Class\GamesInfo.cs" />
     <Compile Include="Class\Json\DesJson.cs" />

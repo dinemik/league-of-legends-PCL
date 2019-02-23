@@ -14,7 +14,7 @@ namespace LolPcl.Class
     {
         public static async Task<RootGameInfo> HowManyGamesPlayedAsync(string accID, string region)
         {
-            string url = (region + Links.MathLink + accID + ApiKey.ApiKeyTmp);
+            string url = (region + Links.MathLink + accID + Player.ApiKey);
             var Json = await new Web().UrlAsync(url);
             return DesJson.GetObjMathInf(Json);
         }

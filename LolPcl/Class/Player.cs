@@ -10,9 +10,11 @@ namespace LolPcl.Class
 {
     public class Player : IPlayer
     {
+        public static string ApiKey { get; private set; }
+
         public Player(string apiKey)
         {
-            ApiKey.ApiKeyTmp = $"?api_key={apiKey}";
+            ApiKey = $"?api_key={apiKey}";
         }
 
         public async Task<RootGameInfo> GetMarhInfoAsync(string accID, string region) => 
