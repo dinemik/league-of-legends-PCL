@@ -8,6 +8,6 @@ namespace LolPcl
 {
     internal static class ApiKey
     {
-        public static string ApiKeyTmp => "?api_key=Enter here api key";
+        public static string ApiKeyTmp { get; set; }
     }
 }
